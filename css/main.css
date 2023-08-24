@@ -1,0 +1,906 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+.headerImage{
+  position: relative;
+  height: 750px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sectionNav {
+ position: fixed;
+ transition: background-color 0.4s ease-in-out;
+ height: 55px;
+ z-index: 18;
+
+}
+.sectionNav.scrolled {
+  background-color: white; 
+  opacity: 0.98;
+}
+
+.websiteNav {
+  display: flex;
+  width: 100vw;
+ 
+  left: 50vw;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  z-index: 14;
+
+  top: 25px;
+}
+
+.websiteNav .blackNav { 
+  color: black;
+  text-decoration: none;
+  font-family: 'BenchNine', sans-serif;
+  font-size: .85rem;
+  font-weight: light;
+  padding: 0 25px;
+  margin-top: 20px;
+
+  transition: color
+}
+
+.sectionNav.scrolled .blackNav { 
+   color: black;
+}
+.backVideo {
+  position: absolute;
+  top: 0;
+  
+
+}
+
+.backVideo{
+  width: 100%;
+  height: auto;
+}
+
+.bookLink {
+  background-color: rgba(0, 0, 0, .30);
+  color: white;
+  font-weight: bold;
+  padding: 20px 1vw;
+  margin-bottom: 25px;
+  font-family: 'BenchNine', sans-serif;
+  text-decoration: none;
+  font-size: .85rem;
+ 
+}
+
+.bookLink.scrolled { 
+  background-color: black;
+}
+.bannerTitle {
+  font-family: 'Alfa Slab One', cursive; 
+  font-size: 5rem;
+  position: absolute;
+  color: white;
+  top: 100px;
+  left: 15vw;
+  z-index: 2;
+  width: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+
+.bannerTitle.gymAmir{ 
+font-size: 7rem;
+top: 250px;
+background-color: rgba(0, 0, 0, 0.30);
+padding: 50px 40px 50px 40px;
+letter-spacing: .25rem;
+}
+.bannerTitle h1 {
+  background-color: rgba(0, 0, 0, 0.30);
+  padding: 2.5rem 2.5rem 7rem 2.5rem;
+  letter-spacing: .25rem;
+}
+
+.bannerTitle.meetAmir {
+  position: absolute;
+  top: 27px;
+  left: 2vw;
+  width: 30%;
+  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.30);
+  padding: 10px 10px;
+  letter-spacing: .25rem;
+  margin: 0;
+}
+
+.container { 
+  display: flex;
+  justify-content: flex-start;
+  display: inline-block;
+  margin-right: 0;
+  width: 50%;
+}
+
+.legendHeader { 
+  text-align: center;
+  margin: 60px 0;
+  font-family: 'Alfa Slab One', cursive; 
+  font-size: 3rem;
+}
+.bookParagraph { 
+  width: 90%;
+  margin-left: 4vw;
+  display: inline-block;
+  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+form { 
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vw;
+}
+
+.formSection{ 
+  width: 70%;
+  margin-right: 10vw;
+  
+}
+
+form input, form textarea { 
+  border: 2px gray solid;
+  margin: 10px 0;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+#name, #title, #organization, #email, #phone, #budget, #message {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 15px;
+  background: black; 
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  margin: 20px auto 0;
+
+}
+.aboutHeader { 
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 4.5rem;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.aboutParaOne {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  padding: 0 50px;
+  text-align: justify;
+}
+
+.lastWord {
+ position: absolute;
+ background-color: rgb(40, 117, 159);
+ font-family: 'BenchNine', sans-serif;
+ color: white;
+ top: 350px;
+ left: 16vw;
+ z-index: 5;
+ font-size: 4rem;
+ padding: .5vh .5vw;
+}
+.bannerSubTitle{ 
+  position: absolute;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  z-index: 6;
+  top: 400px;
+  text-align: center;
+  line-height: 1.25rem;
+
+
+}
+
+.thirdSection {
+  position: absolute;
+  top: 1550px;
+
+}
+.secondBanner {
+  width: 100vw;
+  height: 760px;
+  z-index: 6;
+
+}
+
+.amirPortrait {
+  position: absolute;
+  width: 28.5vw;
+  z-index: 10;
+  top: 212px;
+  left: 17.25vw;
+
+}
+
+.secondSectionTitle {
+  position: absolute;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 6rem;
+  top: 2px;
+  left: 46vw;
+  z-index: 8;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.hisMission {
+  display: flex;
+  justify-content: space-between;
+}
+.talkingPhoto{ 
+  width: 50%;
+
+}
+.missionSubtitle { 
+  font-family: 'Alfa Slab One', cursive;
+  color: white;
+  background-color: black;
+  padding: 0 5px;
+}
+
+.leftText { 
+  margin-top: 300px;
+}
+.inspiringStory { 
+  font-family: 'Alfa Slab One', cursive;
+  color: white;
+  background-color: black;
+  font-size: 5rem;
+  text-align: center;
+  margin: 0;
+  padding: 25px 0;
+}
+
+.fontPara { 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  padding-left: 2vw;
+  text-align: justify;
+
+}
+.studentPhotos { 
+  position: relative;
+  left: 15%;
+  width: 75%;
+
+}
+.storyContent { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutFooter { 
+  top: 4700px;
+}
+.missionHeader { 
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3.5rem;
+  margin: 0;
+}
+.aboutIsmail {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  color: white;
+  top: 320px;
+  left: 46vw;
+  z-index: 9;
+  padding-top: 3vh;
+  width: 40vw;
+}
+
+.highLight { 
+  color:rgb(40, 117, 159);
+}
+
+
+
+.westChester {
+  padding-right: 5vw;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.carousel {
+  position: absolute;
+  overflow: hidden;
+  background-color: white;
+  top: 735px;
+  z-index: 2;
+}
+
+.carouselSlider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  padding: 50px 0;
+}
+
+.carouselList {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;  
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carouselItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.carouselItem:hover {
+  transform: scale(1.1);
+
+}
+
+.thirdSectionTitle {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 5rem;
+  color: black;
+  width: 100vw;
+  text-align: center;
+  margin: 75px 0 45px 0;
+}
+
+iframe {
+  position: absolute;
+  left: 17vw;
+  
+}
+
+.fourthSection {
+  position: relative;
+  top: 1900px;
+  width: 100vw;
+}
+
+.fourthSectionTitle {
+  text-align: center;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 6rem;
+  margin: 65px 0 0 0;
+  font-weight: bold;
+  z-index: 10;
+}
+.fourthSection > p { 
+  position: absolute;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 2rem;
+  width: 65vw;
+  left: 17vw;
+  text-align: center;
+  margin: 30px 0;
+}
+.fourthSection > a {
+  position: relative;
+  background-color: rgb(40, 117, 159);
+  color: white;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 1.5rem;
+  padding: 20px 10vw;
+  text-decoration: none;
+  top: 304px;
+  margin-top: 20px;
+  z-index: 11;
+  
+}
+
+.fourthSection > img { 
+  position: relative;
+  width: 35vw;
+  height: 50px;
+  left: 38vw;
+  z-index: 9;
+}
+.fifthSection {
+  position: absolute;
+  top: 2530px;
+  width: 100%;
+  height: 700px;
+}
+.fifthSection img { 
+  width: 100%;
+  margin-bottom: 50px;
+  z-index: 9;
+  position: absolute;
+
+  
+  
+}
+
+.fifthSection ul {
+  position: absolute;
+  z-index: 10;
+  top: 350px;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.30);
+  width: 90%;
+  left: 5%;
+  padding: 30px 10px;
+  font-family: 'Alfa Slab One', cursive;
+  line-height: 5rem;
+}
+.fifthSectionTitle { 
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  color: white;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 7rem;
+  z-index: 10;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+.fifthSectionSubtitle {
+  position: absolute;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 10;
+  font-size: 1.5rem;
+  top: 220px;
+  left: 20vw;
+  margin: 0;
+}
+
+.secondSection{
+  position: absolute;
+  top: 800px;
+}
+.serviceFirst, .serviceSecond, .serviceThird, .serviceFourth {
+  position: absolute;
+  z-index: 11;
+  font-family: 'BenchNine', sans-serif;
+  color: white;
+  margin: 0;
+  
+}
+.serviceFirst {
+  font-size: 3rem;
+  
+}
+
+.serviceSecond { 
+  font-size: 4rem;
+  
+  
+}
+.serviceThird { 
+  font-size: 7rem;
+  
+  
+  width: auto;
+}
+.serviceFourth {
+  font-size: 5rem;
+  top: 770px;
+  width: auto;
+  color:rgb(40, 117, 159);
+}
+
+
+/* ABOUT */
+.familyPortraits {
+  display: flex;
+  width: 100vw;
+
+}
+
+.smallPortrait { 
+  width: 25%;
+  object-fit: contain;
+}
+.fitScreen {
+  object-fit: fill;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  
+}
+
+footer { 
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  top: 1900px;
+  z-index: 19;
+  background-color: black;
+}
+
+.bookLinkFooter { 
+  position: absolute;
+  padding: 20px 10vw;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  left: 30vw;
+  margin-top: 70px;
+}
+
+.bottomNav {
+  position: absolute;
+  display: flex;
+  width: 50vw;
+    top: 285px;
+    left: 22.5vw;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    
+    /* z-index: 2; */
+}
+
+.studentHeader{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.30);
+  padding: 50px 70px 50px 70px;
+  letter-spacing: .25rem;
+  color: white;
+  font-family: 'Alfa Slab One', cursive;
+  z-index: 1;
+  font-size: 6rem;
+  top: 320px;
+  left: 25vw;
+
+}
+
+.studentProgram { 
+  letter-spacing: .25rem;
+  color: black;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 5rem;
+  text-align: center;
+}
+.amirSpeaking{ 
+  width: 100%;
+}
+
+.programObjectives{
+  position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    /* background-color: rgba(0, 0, 0, 0.30); */
+    font-size: 1.75rem;
+    z-index: 3;
+    width: 70%;
+    left: 10%;
+    text-align: justify;
+
+}
+
+.topicsOne {
+  width: 100vw;
+  height: 760px;
+  z-index: 2;
+}
+.readingClass {
+  position: absolute;
+    z-index: 2;
+    width: 100vw;
+    top: 1500px;
+
+}
+
+.topicsHeader { 
+  position: absolute;
+  text-align: center;
+  top: 1500px;
+  z-index: 4; 
+  color: white;
+  width: 100vw;
+  font-family: 'Alfa Slab One', cursive; 
+  font-size: 5rem;
+}
+
+.subheading { 
+  position: absolute;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2.7rem;
+  color: white;
+  z-index: 4;
+  width: 100vw;
+  margin: 0 5vw;
+}
+.firstSub { 
+  top: 1740px;
+}
+
+.paragraph { 
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  z-index: 4; 
+  color: white;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 10px 5vw;
+}
+
+.paraOne { 
+  top: 1800px;
+}
+
+.secondSub {
+  top: 1990px; 
+}
+
+.paraTwo { 
+  top: 2050px;
+}
+
+.topicsTwo { 
+  position: absolute;
+  top: 2200px;
+  z-index: 5;
+  width: 100vw;
+}
+
+.thirdSub, .fourthSub { 
+  color: black;
+  
+}
+.thirdSub { 
+  top: 40px;
+}
+.fourthSub { 
+  position: absolute;
+  z-index: 6;
+  top: 225px;
+}
+
+.paraThree, .paraFour { 
+  color: black; 
+  top: 90px;
+}
+
+.paraFour { 
+  top: 290px;
+}
+
+.paraTestOne {
+  color: black;
+
+}
+
+.paraTestTwo { 
+  position: absolute;
+  top: 1350px;
+  color: black;
+}
+
+.paraTestThree { 
+  position: absolute;
+  color: black;
+  top: 1500px;
+}
+
+.bannerTitle.meetAmir {
+  font-size: 6.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.30);
+  padding: 10px 90px;
+  letter-spacing: .25rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .bannerTitle {
+    font-size: 1.5rem;
+    top: 30px;
+  }
+  .bannerTitle h1 {
+    padding: 1rem 1.5rem 3.5rem 1.5rem;
+    
+  }
+
+  .bannerSubTitle { 
+    top: 100px;
+    font-size: .6rem;
+    line-height: .7rem;
+  }
+
+  .carousel { 
+    top: 235px;
+    visibility: collapse;
+  }
+
+  .carouselSlider { 
+    visibility: collapse;
+  }
+  .mobileOnly h2{ 
+    position: absolute;
+    top: 200px;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    
+  }
+  .pastClients {
+    position: absolute;
+    top: 275px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+  .secondSection {
+    top: 550px;
+  }
+  .secondSectionTitle{
+    font-size: 4.5rem;
+    width: 100vw;
+    left: 0;
+    text-align: center;
+  }
+  .amirPortrait {
+    width: 100vw;
+    left: 0;
+    right: 5vw;
+    top: 240px;
+  }
+
+  .aboutIsmail { 
+    color: black;
+    top: 730px;
+    left: 0;
+    width: 90vw;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .thirdSection { 
+    top: 1700px; 
+  }
+  .thirdSectionTitle {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .bannerTitle.meetAmir {
+    font-size: 1.5rem;
+    padding: 0;
+
+  }
+  .headerImage {
+    height: auto;
+  }
+  .aboutHeader {
+    font-size: 3.5rem;
+    padding-left: 0;
+  }
+  .aboutParaOne {
+    font-size: 1.5rem;
+  }
+  .missionHeader {
+    font-size: 2.5rem;
+    width: 100vw;
+    text-align: center;
+  }
+  .leftText { 
+    width: 100%;
+    margin-top: 50px;
+  }
+  .missionSubtitle {
+    margin: 35vw;
+    text-align: center;
+    padding: 0;
+  }
+  .inspiringStory {
+    font-size: 4.5rem; 
+  }
+  .storyContent img {
+    width: 100vw;
+    height: 100%;
+  } 
+}
+
+
+.mobileOnly h2{ 
+  position: absolute;
+  top: 200px;
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  visibility: collapse;
+}
+
+.pastClients {
+  position: absolute;
+  top: 275px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  visibility: collapse;
+}
+
+.pastClients img { 
+  margin-bottom: 10px;
+}
+
+
+/* @media screen and (width: 1400px) {
+  .amirPortrait {
+    position: absolute;
+    width: 28.5vw;
+    z-index: 10;
+    top: 228px;
+    left: 17.25vw;
+} */
+iframe { 
+  position: absolute;
+  left: 15vw;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

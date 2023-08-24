@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Hojas de plata';
+    src: url('Hojasdeplata.woff2') format('woff2'),
+        url('Hojasdeplata.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
