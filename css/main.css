@@ -689,7 +689,7 @@ footer {
 }
 
 .secondSub {
-  top: 1990px; 
+  top: 1900px; 
 }
 
 .paraTwo { 
@@ -710,19 +710,20 @@ footer {
 .thirdSub { 
   top: 2250px;
 }
-.fourthSub { 
-  position: absolute;
-  z-index: 6;
-  top: 225px;
-}
+
 
 .paraThree, .paraFour { 
   color: black; 
   top: 2300px;
 }
 
+.fourthSub { 
+  position: absolute;
+  z-index: 6;
+  top: 2450px;
+}
 .paraFour { 
-  top: 290px;
+  top: 2500px;
 }
 
 .paraTestOne {
