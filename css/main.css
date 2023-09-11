@@ -885,6 +885,22 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.amirSpeaking {
+  width: 100vw;
+}
+
+.studentHeader {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.30);
+  padding: 30px 40px 25px 40px;
+  letter-spacing: .25rem;
+  color: white;
+  font-family: 'Alfa Slab One', cursive;
+  z-index: 1;
+  font-size: 2rem;
+  top: 50px;
+ 
+}
 }
 
 
