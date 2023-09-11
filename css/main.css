@@ -231,7 +231,7 @@ form button {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   z-index: 6;
-  top: 400px;
+  top: 350px;
   text-align: center;
   line-height: 1.25rem;
 
@@ -252,9 +252,9 @@ form button {
 
 .amirPortrait {
   position: absolute;
-  width: 28.5vw;
+  width: 425px;
   z-index: 10;
-  top: 212px;
+  top: 193px;
   left: 17.25vw;
 
 }
@@ -861,8 +861,31 @@ footer {
     width: 100vw;
     height: 100%;
   } 
+  .smallPortrait {
+    width: 50%;
+    object-fit: contain;
+}
+.familyPortraits {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.hisMission {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.talkingPhoto {
+  width: 100%;
 }
 
+.storyContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+}
 
 
 .mobileOnly h2{ 
