@@ -940,7 +940,49 @@ footer {
   font-family: 'Alfa Slab One', cursive;
   font-size: 3rem;
 }
-
+.firstSub {
+  top: 1240px;
+}
+.subheading {
+  position: absolute;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2.7rem;
+  color: black;
+  z-index: 4;
+  width: 100vw;
+  text-align: center;
+  margin: 0;
+}
+.paragraph {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  z-index: 4;
+  color: black;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 10px 5vw;
+}
+.paraOne {
+  top: 1400px;
+}
+.secondSub {
+  top: 1700px;
+}
+.paraTwo {
+  top: 1750px;
+}
+.thirdSub {
+  top: 2150px;
+}
+.paraFour {
+  top: 2700px;
+}
+.fourthSub {
+  position: absolute;
+  z-index: 6;
+  top: 2590px;
+}
 }
 .mobileOnly h2 { 
   position: absolute;
