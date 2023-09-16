@@ -992,6 +992,12 @@ footer {
 .educatorsParaOne{
   top: 1465px;
 }
+.educatorsSecondSub {
+  top: 2000px;
+}
+.educatorsParaTwo {
+  top: 2200px;
+}
 }
 .mobileOnly h2 { 
   position: absolute;
