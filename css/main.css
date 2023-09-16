@@ -689,11 +689,11 @@ footer {
 }
 
 .secondSub {
-  top: 1900px; 
+  top: 2000px; 
 }
 
 .paraTwo { 
-  top: 1950px;
+  top: 2050px;
 }
 
 .topicsTwo { 
@@ -982,6 +982,15 @@ footer {
   position: absolute;
   z-index: 6;
   top: 2590px;
+}
+.educatorsTopics {
+  top: 1050px;
+}
+.educatorsSub {
+  top: 1290px;
+}
+.educatorsParaOne{
+  top: 1465px;
 }
 }
 .mobileOnly h2 { 
