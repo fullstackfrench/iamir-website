@@ -897,7 +897,7 @@ footer {
   color: white;
   font-family: 'Alfa Slab One', cursive;
   z-index: 1;
-  font-size: 3rem;
+  font-size: 2rem;
   top: 80px;
   left: 0;
  
@@ -907,7 +907,7 @@ footer {
   letter-spacing: .25rem;
   color: black;
   font-family: 'Alfa Slab One', cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   
 
@@ -916,7 +916,7 @@ footer {
   position: absolute;
   font-family: 'Montserrat', sans-serif;
   color: black;
-  font-size: 1.75rem;
+  font-size: 1rem;
   z-index: 3;
   width: 100%;
   left: 0%;
@@ -927,26 +927,26 @@ footer {
   position: absolute;
   z-index: 2;
   width: 100vw;
-  top: 1000px;
+  top: 600px;
 }
 
 .topicsHeader {
   position: absolute;
   text-align: center;
-  top: 1000px;
+  top: 625px;
   z-index: 4;
   color: white;
   width: 100vw;
   font-family: 'Alfa Slab One', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .firstSub {
-  top: 1240px;
+  top: 850px;
 }
 .subheading {
   position: absolute;
   font-family: 'Alfa Slab One', cursive;
-  font-size: 2.7rem;
+  font-size: 2rem;
   color: black;
   z-index: 4;
   width: 100vw;
@@ -959,44 +959,70 @@ footer {
   font-size: 1rem;
   z-index: 4;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: justify;
   margin: 10px 5vw;
 }
 .paraOne {
-  top: 1400px;
+  top: 940px;
 }
 .secondSub {
-  top: 1700px;
+  top: 1100px;
 }
 .paraTwo {
-  top: 1750px;
+  top: 1150px;
 }
 .thirdSub {
-  top: 2150px;
+  top: 1400px;
 }
+
+.paraThree {
+  color: black;
+  top: 1450px;
+}
+
 .paraFour {
-  top: 2700px;
+  top: 1700px;
+  padding-bottom: 50px;
 }
 .fourthSub {
   position: absolute;
   z-index: 6;
-  top: 2590px;
+  top: 1620px;
+  
 }
 .educatorsTopics {
-  top: 1050px;
+  top: 650px;
 }
 .educatorsSub {
-  top: 1290px;
+  top: 890px;
 }
 .educatorsParaOne{
-  top: 1465px;
+  top: 1000px;
 }
 .educatorsSecondSub {
-  top: 2000px;
+  top: 1250px;
 }
 .educatorsParaTwo {
-  top: 2200px;
+  top: 1350px;
+  padding-bottom: 50px;
+}
+
+.paraTestTwo {
+  position: absolute;
+  top: 590px;
+  color: black;
+}
+.paraTestThree {
+  position: absolute;
+  color: black;
+  top: 790px;
+}
+.testimonialsHeader {
+font-size: 2rem;
+}
+.paraTestOne, .paraTestTwo, .paraTestThree {
+  text-align: left;
 }
 }
 .mobileOnly h2 { 
