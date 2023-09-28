@@ -724,11 +724,11 @@ footer {
 }
 
 .secondSub {
-  top: 2000px; 
+  top: 1900px; 
 }
 
 .paraTwo { 
-  top: 2050px;
+  top: 1950px;
 }
 
 .topicsTwo { 
@@ -806,11 +806,11 @@ footer {
 
   .carousel { 
     top: 235px;
-    visibility: collapse;
+    display: none;
   }
 
   .carouselSlider { 
-    visibility: collapse;
+    display: none;
   }
   .mobileOnly h2{ 
     position: absolute;
