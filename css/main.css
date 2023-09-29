@@ -653,6 +653,7 @@ footer {
   font-family: 'Alfa Slab One', cursive;
   font-size: 5rem;
   text-align: center;
+  padding-top: 50px;
 }
 .amirSpeaking{ 
   width: 100%;
@@ -668,6 +669,7 @@ footer {
     width: 70%;
     left: 10%;
     text-align: justify;
+    padding-top: 50px;
 
 }
 
