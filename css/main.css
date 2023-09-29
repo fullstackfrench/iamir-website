@@ -674,9 +674,15 @@ footer {
 }
 
 .topicsOne {
-  width: 100vw;
+  background-image: url("../images/reading\ to\ class-2.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
   height: 760px;
-  z-index: 2;
+  top: 1400px;
+  z-index: 1;
 }
 .readingClass {
   position: absolute;
@@ -689,7 +695,7 @@ footer {
 .topicsHeader { 
   position: absolute;
   text-align: center;
-  top: 1600px;
+  top: 100px;
   z-index: 4; 
   color: white;
   width: 100vw;
@@ -707,7 +713,7 @@ footer {
   margin: 0 5vw;
 }
 .firstSub { 
-  top: 1740px;
+  top: 300px;
 }
 
 .paragraph { 
@@ -722,15 +728,15 @@ footer {
 }
 
 .paraOne { 
-  top: 1800px;
+  top: 350px;
 }
 
 .secondSub {
-  top: 1910px; 
+  top: 450px; 
 }
 
 .paraTwo { 
-  top: 1960px;
+  top: 500px;
 }
 
 .topicsTwo { 
@@ -746,22 +752,22 @@ footer {
 }
 
 .thirdSub { 
-  top: 2250px;
+  top: 800px;
 }
 
 
 .paraThree, .paraFour { 
   color: black; 
-  top: 2300px;
+  top: 850px;
 }
 
 .fourthSub { 
   position: absolute;
   z-index: 6;
-  top: 2450px;
+  top: 970px;
 }
 .paraFour { 
-  top: 2500px;
+  top: 1030px;
 }
 
 .paraTestOne {
