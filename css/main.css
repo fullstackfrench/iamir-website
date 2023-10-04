@@ -807,10 +807,10 @@ footer {
 
   .sectionNav {
     position: fixed;
-    top: 60px;
+    top: 0px;
     left: 0;
     width: 100%;
-    padding: 10px 0 25px;
+    padding: 5px 0 25px;
     
   }
 
@@ -818,8 +818,22 @@ footer {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+    transform: translateX(-100%)
   }
 
+  .hamburger { 
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .bar {
+    height: 2px;
+    width: 27px;
+    background-color: black;
+    margin: 5px 0; 
+    
+  }
   .bannerTitle {
     font-size: 1.5rem;
     top: 30px;
