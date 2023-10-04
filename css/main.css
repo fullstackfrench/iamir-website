@@ -71,6 +71,11 @@
 .sectionNav.scrolled .blackNav { 
    color: black;
 }
+
+.hamburger {
+  display:none;
+}
+
 .backVideo {
   position: absolute;
   top: 0;
@@ -799,6 +804,22 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+
+  .sectionNav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0 25px;
+    
+  }
+
+  .websiteNav {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
   .bannerTitle {
     font-size: 1.5rem;
     top: 30px;
