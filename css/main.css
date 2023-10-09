@@ -807,6 +807,19 @@ footer {
 .websiteNav--open {
   transform: translate(0) !important;
 }
+.hamburger--open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg)
+}
+
+.hamburger--open .bar:nth-child(2) {
+  opacity: 0;
+
+}
+.hamburger--open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+
+}
+
 @media screen and (max-width: 576px) {
 
   .sectionNav {
