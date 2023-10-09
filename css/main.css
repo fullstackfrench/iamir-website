@@ -46,7 +46,7 @@
 .websiteNav {
   display: flex;
   width: 100vw;
- 
+
   left: 50vw;
   flex-direction: row;
   justify-content: flex-end;
@@ -54,6 +54,7 @@
   z-index: 14;
 
   top: 25px;
+  transition: all 0.3s ease-in-out;
 }
 
 .websiteNav .blackNav { 
@@ -803,6 +804,9 @@ footer {
   margin: 0;
 }
 
+.websiteNav--open {
+  transform: translate(0) !important;
+}
 @media screen and (max-width: 576px) {
 
   .sectionNav {

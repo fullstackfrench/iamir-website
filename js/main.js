@@ -81,4 +81,8 @@ carouselSlider.addEventListener("mouseleave", unhover);
 
 carousel();
 
+const navEl = document.querySelector('.websiteNav');
+const hamburgerEl = document.querySelector('.hamburger')
 
+hamburgerEl.addEventListener("click", () => {navEl.classList.toggle("websiteNav--open");
+});
