@@ -858,12 +858,12 @@ footer {
     top: 30px;
   }
   .bannerTitle h1 {
-    padding: 1rem 1.5rem 3.5rem 1.5rem;
+    padding: 1rem 2.25rem 3.5rem 2.25rem;
     
   }
 
   .bannerSubTitle { 
-    top: 100px;
+    top: 70px;
     font-size: .6rem;
     line-height: .7rem;
   }
