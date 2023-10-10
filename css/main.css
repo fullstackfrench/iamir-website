@@ -834,7 +834,7 @@ footer {
   .websiteNav {
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 10px;
     transform: translateX(-100%);
     background: white;
   }
@@ -842,14 +842,14 @@ footer {
   .hamburger { 
     display: block;
     cursor: pointer;
-    color: white !important;
+    
 
   }
 
   .bar {
     height: 2px;
     width: 27px;
-    background-color: black;
+    background-color: white;
     margin: 5px 0; 
     
   }
