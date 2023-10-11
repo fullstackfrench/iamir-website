@@ -819,7 +819,11 @@ footer {
   transform: translateY(-7px) rotate(-45deg);
 
 }
-
+@media screen and (min-width: 576px) {
+  .hiddenMobileSection {
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
 
   .sectionNav {
@@ -867,6 +871,23 @@ footer {
     font-size: .6rem;
     line-height: .7rem;
   }
+  
+  .hiddenMobileSection {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 300px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 300px;
+
+  }
+
+  .hiddenMobileSection img {
+    width: 25%;
+   
+  }
+
 
   .carousel { 
     top: 235px;
@@ -885,14 +906,7 @@ footer {
     padding-top: 10px;
     
   }
-  .pastClients {
-    position: absolute;
-    top: 275px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-  }
+  
   .secondSection {
     top: 550px;
   }
