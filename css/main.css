@@ -825,6 +825,13 @@ footer {
   }
 }
 @media screen and (max-width: 576px) {
+  .videoBottom {
+    position: absolute;
+    width:fit-content;
+    height: auto;
+    top: 1900px;
+    padding: 0;
+  }
 
   .sectionNav {
     position: fixed;
